@@ -1,0 +1,15 @@
+1 - How do we write constructor so that only one object could be created.
+2 - What will happen if constructor return something(Primitive, object).
+    Ans - Primitive(ignored), object(will override this)
+3 - Write two constructor in such a way so that their objects created by new keywords are equal.  
+4 - Regular number in js can’t exceed 2^53 or be less than -2^53
+5 - How can we call toString method on constant numbers (12..toString)
+6 - What is difference between "Object.is" and "==="
+    Ans - Object.is(NaN, NaN) is true and Object.is(0, -0) is false, rest are same as "==="
+7 - What is difference between parseInt and parsing using '+' operator
+    Ans - parseFloat('2.3px') will be 2.3 but +('2.3px') will be NaN
+8 - Random number form min to max.
+9 - String characters accessing 
+10 - String can not me mutated
+  
+          
