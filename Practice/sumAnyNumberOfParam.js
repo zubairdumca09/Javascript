@@ -19,4 +19,4 @@ const sum2 = (...params1) => {
 }
 
 
-console.log(sum2(4, 1, 3, 2)(1)());
+console.log(sum1(4, 1, 3, 2)(1)());

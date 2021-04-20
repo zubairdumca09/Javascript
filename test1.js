@@ -1,11 +1,19 @@
-var obj = { name: "zubair" }
-var obj1 = { name: "zubair" }
-function A(name) {
-  this.name = name
+Array.prototype.reducePolyfill = function (fun, initial) {
+  if (this.length) {
+    const len = this.length;
+    let ac = initial ? initial : this[0]
+    for (let i = (initial ? 0 : 1); i < len; i++) {
+      ac = fun(ac, this[i])
+    }
+    return ac;
+  }
 }
-function B(name) {
-  this.name = name
+
+
+function f1(ac, cur) {
+  return ac + cur
 }
-var a = new A("a");
-var b = new B("a");
-console.log(obj === obj1)
+
+var sum = [1, 2, 3].reducePolyfill(f1)
+console.log(sum)
+
